@@ -27,8 +27,7 @@ func main() {
 		go request(c)
 	}
 
-	max := -1
-	sum := -1
+	var max, sum int
 	for i := 0; i < count; i++ {
 		v := <-c
 		if max < v {
